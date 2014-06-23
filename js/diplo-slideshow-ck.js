@@ -1,0 +1,2 @@
+// Simple jQuery background image rotator plug-in by Dan 'Diplo' Booth 
+(function(e){e.fn.extend({bgrotate:function(t){function a(e,t,n){e.css("background-image","url("+n+t[o]+")");o++;if(o==t.length){o=0;u=!1}if(u){var r=document.createElement("img");r.src=n+t[o];s.push(r)}}var n={delay:1e3,images:[],imagedir:"/images/"},r=e.extend(n,t),i=e(this),s=[],o=0,u=!0;return this.each(function(){setInterval(function(){a(i,r.images,r.imagedir)},r.delay)})}})})(jQuery);

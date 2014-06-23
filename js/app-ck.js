@@ -1,0 +1,3 @@
+// Foundation JavaScript
+// Documentation can be found at: http://foundation.zurb.com/docs
+$(document).foundation();$(document).ready(function(){$("a").each(function(){$(this).attr("href").indexOf("#")>-1&&$(this).click(function(){$($(this).attr("href")).ScrollTo()})});$(".tabs .tab-links a").on("click",function(e){var t=$(this).attr("href");$(".tabs "+t).show().siblings().hide();$(this).parent("li").addClass("active").siblings().removeClass("active");e.preventDefault()});$("html").bgrotate({delay:3e3,imagedir:"img/",images:["img-railroadpark-bg.jpg","birmingham-skyline.jpg","img-railroadpark-bg.jpg","birmingham-skyline.jpg"]})});

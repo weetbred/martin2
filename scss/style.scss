@@ -1,0 +1,211 @@
+@import "compass";
+@import "component.css";
+
+$blue: #58cdfc;
+$grey: #515151;
+
+/* TYPOGRAPHY STYLES */
+
+h1, h2, h3, h4 {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+}
+p {
+	color: white;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+/* TYPOGRAPHY STYLES END */
+
+
+
+/* -----BG OVERLAY STYLES----- */
+
+html {
+	background: url(../img/img-railroadpark-bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	// background-color: rgba(44,44,44,0.3);
+	// background-image: linear-gradient(90deg, transparent 50%, rgba(27,27,27,0.5) 50%);
+	// background-size: 2px 2px;
+	background: url(../img/bg-pattern.png) repeat;
+} 
+
+
+/* -----BG OVERLAY STYLES END----- */
+
+/* ------ HEADER STYLES----------------------*/
+
+header {
+	.header-strip {
+		background: darken($blue, 30%);
+		height: .5em;
+	}
+	
+	.top-bar {
+		padding: 0 4em;
+	}
+		
+}
+
+
+
+/* ------ MAIN CONTENT STYLES----------------------*/
+
+.color-top {
+	border-top: 5px solid darken($blue, 25%);
+}
+
+.intro-text {
+	h1 {
+		color: white;
+		margin-bottom: 0;
+	}
+}
+
+.content-box {
+	padding: 2em;
+	background: rgba(255,255,255,0.95);
+	margin-bottom: 2em;
+	h2 {
+		color: darken($blue, 35%);
+	}
+	p{
+		color: $grey;
+		font-size: .95rem;
+		font-family: 'Droid Sans', sans-serif;
+	}
+}
+
+.line-up {
+	.panel {
+		padding: 0;
+	}
+}
+
+.logo {
+	margin-top: 2.5em;
+}
+
+.countdown-timer {
+	img {
+		margin: 3em 0 2em 0;
+	}
+}
+
+/* ------ FOOTER STYLES----------------------*/
+footer {
+	background: darken($blue, 50%);
+}
+/* ------ TYPOGRAPHY OVERRIDES----------------------*/
+
+
+/* ------ GENERAL STYLES----------------------*/
+
+.extend {
+	padding: 0 !important;
+}
+
+/* ------ MEDIA QUERIEEES----------------------*/
+
+
+
+/* -----HEADER STYLES END-----  */
+
+/* -----BODY STYLES----- */
+	
+/* -----BODY STYLES END----- */
+
+
+/* -----BODY STYLES----- */
+
+	
+/* -----BODY STYLES END----- */
+
+/* TABS STYLES */
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        float:left;
+        list-style:none;
+        width: 25%;
+        border-right: 1px solid rgba(183,217,239,0.86);
+        font-family: 'Economica', sans-serif;
+        text-transform: uppercase;
+        
+    }
+    li.active.li-end{
+    	border-right: none !important;
+  
+    }
+ 	   .tab-links a {       	
+			padding: 9px 0;
+			display: block;
+			background: #7FB5DA;
+			font-size: 1.5rem;
+			font-weight: 600;
+			text-align: center;
+			color: #4c4c4c;
+			transition: all linear 0.15s;
+			} 
+        .tab-links a:hover {
+            background:#a8cde6;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background: rgba(0,0,0,0);
+        border-top: 1px solid darken(rgba($blue, .2), 45%);
+        color: $blue;
+        
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        //border-radius:3px;
+        //box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        //background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+
+
+
+
+@media #{$small-up} {}
+@media #{$small-only} {}
+
+@media #{$medium-up} { }
+@media #{$medium-only} { }
+
+@media #{$large-up} { }
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
